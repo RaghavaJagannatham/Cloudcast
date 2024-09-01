@@ -1,0 +1,52 @@
+.forecast h2 {
+  margin: 25px 0;
+  padding: 0 10px;
+  font-size: 22px;
+}
+
+.forecast .cardWrapper {
+  background: var(--glass-background);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-radius: 30px;
+  padding: 20px;
+  height: fit-content;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  transition: var(--transition);
+}
+
+.forecast .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  background: var(--glass-background);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; /* Slightly smaller radius for cards */
+  padding: 15px; /* Padding for content inside cards */
+
+  
+}
+
+.forecast .card:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.forecast .card img {
+  width: 50px;
+}
+
+.forecast .card .label {
+  color: var(--sec-text-color);
+  font-size: 0.8rem;
+}
+
+.forecast .card span {
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.1rem;
+}

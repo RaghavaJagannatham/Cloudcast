@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Flavors&display=swap");
+
+:root {
+  --back-ground-color: linear-gradient(
+    135deg, 
+    #fffdfb, /* Brighter Light Cream */
+    #f3ffe7, /* Brighter Very Light Green */
+    #d0f7ff, /* Brighter Very Light Cyan */
+    #d0f8f1, /* Brighter Light Aquamarine */
+    #d1f9ff, /* Brighter Light Blue */
+    #dbeaff, /* Brighter Light Lavender */
+    #e1d6ff, /* Brighter Light Purple */
+    #f7d6ff, /* Brighter Light Pink */
+    #ffd0ec, /* Brighter Light Rose */
+    #ffe8b5  /* Brighter Light Peach */
+  );
+  --boxes-colors: #ffffff; /* Brighter Light Gray */
+  --boxes-colors2: #f0f0f0; /* Brighter Gray */
+  --search-color: #f2f0f0; /* Brighter Search Bar Color */
+  --main-text-color: #000000; /* Black for Main Text */
+  --sec-text-color: #888888; /* Slightly Brighter Gray for Secondary Text */
+  --input-hover: #eeeeee; /* Brighter Hover Color */
+  --transition: 0.3s;
+
+  /* Glassmorphism Variables for Light Mode */
+  --glass-background: rgba(255, 255, 255, 0.25); /* Frosted glass background for light mode */
+  --glass-border: rgba(255, 255, 255, 0.18); /* Light border color */
+  --glass-blur: 10px; /* Blur effect */
+}
+
+body.dark {
+  --back-ground-color: linear-gradient(
+    135deg,
+    #2c3e50, /* Dark Blue-Gray */
+    #34495e, /* Darker Blue-Gray */
+    #4b6584, /* Dark Slate Blue */
+    #5f6a7d, /* Muted Steel Blue */
+    #2c3e50, /* Dark Blue-Gray */
+    #283747, /* Dark Midnight Blue */
+    #1f3a46, /* Very Dark Blue */
+    #15232d, /* Charcoal */
+    #0f1a2c, /* Dark Indigo */
+    #0b132b  /* Very Dark Navy */
+  );
+  --boxes-colors: #2b2b2b; /* Dark Gray for Box Elements */
+  --boxes-colors2: #3a3a3a; /* Slightly Lighter Dark Gray */
+  --search-color: #2a2a2a; /* Dark Gray for Search Bar */
+  --main-text-color: #ffffff; /* White for Main Text */
+  --sec-text-color: #cccccc; /* Light Gray for Secondary Text */
+  --input-hover: #444444; /* Darker Gray for Hover Effect */
+  --transition: 0.3s;
+
+  /* Glassmorphism Variables for Dark Mode */
+  --glass-background: rgba(43, 43, 43, 0.25); /* Frosted glass background for dark mode */
+  --glass-border: rgba(255, 255, 255, 0.1); /* Dark border color */
+  --glass-blur: 10px; /* Blur effect */
+}
+
+/* Glassmorphism Box */
+.glass-box {
+  background: var(--glass-background);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  background:var(--back-ground-color);
+  color: var(--main-text-color);
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--boxes-colors);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--sec-text-color);
+  border-radius: 10px;
+}
+
+.container {
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}

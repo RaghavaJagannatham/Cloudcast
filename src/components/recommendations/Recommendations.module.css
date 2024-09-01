@@ -1,0 +1,123 @@
+.recommendations {
+  background: var(--glass-background);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-radius: 30px;
+  padding: 20px;
+  height: fit-content;
+  margin-top: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+.headers{
+  display: flex;
+  justify-content: center;
+}
+.previous .play .next{
+  width: 100px;
+  height: 40px;
+}
+.icons{
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+.tH {
+  font-size: 1.2rem;
+  color: var(--main-text-color);
+  margin-bottom: 25px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.box {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  gap: 5px;
+  background: var(--glass-background);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.box h3 {
+  font-size: 1rem;
+  color: var(--sec-text-color);
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.box .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.box .bottom p {
+  font-size: 1.3rem;
+  flex-grow: 1;
+}
+
+.box .bottom button {
+  background: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bottom {
+  display: flex;
+  flex-direction: column; /* Stack the text and buttons */
+  align-items: center; /* Center align text and buttons */
+}
+
+.bottom p {
+  white-space: nowrap; /* Prevent line breaks within the text */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflowing text */
+  max-width: 100%; /* Ensure it doesn't exceed the container */
+  margin: 0; /* Remove default margin */
+  font-size: 1.2rem; /* Adjust font size as needed */
+}
+
+.buttonContainer {
+  display: flex; /* Align buttons in a row */
+  gap: 10px; /* Add space between buttons */
+}
+
+
+.foodList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.foodList li {
+  margin: 5px 0;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust space between buttons */
+}
+
+.controlButton {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: transform 0.2s; /* Optional: Add a hover effect */
+}
+
+.controlButton:hover {
+  transform: scale(1.1); /* Optional: Slightly enlarge the button on hover */
+}
